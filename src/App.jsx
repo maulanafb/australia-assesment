@@ -1,8 +1,9 @@
 import PageSelector from "./components/PageSelector";
-import "./App.css";
+import styles from "./App.module.css";
+
 const App = () => {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <PageSelector />
     </div>
   );

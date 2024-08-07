@@ -10,13 +10,10 @@
   transition: all 150ms;
 }
 
-hr {
-  border-top: 1px solid #cdcdcd;
-}
-
 .title {
   color: #1f2128;
 }
+
 .item {
   display: flex;
   align-items: center;
@@ -32,6 +29,7 @@ hr {
 .item:active .checkbox {
   box-shadow: 0 0 0 4px #e3e3e3;
 }
+
 .item:active .checkbox.checked {
   border-color: #2469f6;
   box-shadow: 0 0 0 4px #e3e3e3;

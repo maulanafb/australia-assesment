@@ -1,11 +1,11 @@
+import PropTypes from "prop-types";
 import styles from "./Checkbox.module.css";
 
-// eslint-disable-next-line react/prop-types
 const Checkbox = ({ checked, onChange, page }) => {
   return (
     <span className={styles.item} onClick={() => onChange(!checked)}>
       <span className={styles.title}>{page}</span>
-      <div className={styles.checkbox + (checked ? ` ${styles.checked}` : "")}>
+      <div className={`${styles.checkbox} ${checked ? styles.checked : ""}`}>
         <svg
           width="17"
           height="13"
@@ -22,6 +22,12 @@ const Checkbox = ({ checked, onChange, page }) => {
       </div>
     </span>
   );
+};
+
+Checkbox.propTypes = {
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
+  page: PropTypes.string.isRequired,
 };
 
 export default Checkbox;
