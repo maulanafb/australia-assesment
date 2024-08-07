@@ -25,7 +25,7 @@ const PageSelector = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <Checkbox
-          page={"All Pages"}
+          page={"All pages"}
           checked={selectedPages.length === pages.length}
           onChange={toggleAllPages}
         />
