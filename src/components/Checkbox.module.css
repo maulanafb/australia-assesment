@@ -1,0 +1,80 @@
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  transition: all 150ms;
+}
+
+hr {
+  border-top: 1px solid #cdcdcd;
+}
+
+.title {
+  color: #1f2128;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 7px;
+  cursor: pointer;
+}
+
+.item:hover .checkbox {
+  border-color: gray;
+}
+
+.item:active .checkbox {
+  box-shadow: 0 0 0 4px #e3e3e3;
+}
+.item:active .checkbox.checked {
+  border-color: #2469f6;
+  box-shadow: 0 0 0 4px #e3e3e3;
+}
+
+.item .checkbox.checked {
+  background: #2469f6;
+  border: 1px solid #2469f6;
+}
+
+.item:hover .checkbox.checked {
+  background: #5087f8;
+  border: 1px solid #5087f8;
+}
+
+.checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
+.item .checkbox svg {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.item:hover .checkbox svg {
+  color: gray;
+}
+
+.item:hover .checkbox.checked svg {
+  color: white;
+}
+
+.item:active .checkbox svg {
+  color: black;
+}

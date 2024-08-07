@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  width: 370px;
+  height: 326px;
+  box-shadow: 0px 0px 4px rgba(20, 20, 20, 0.1),
+    0px 8px 15px rgba(20, 20, 20, 0.12);
+}
+
+.doneButton {
+  color: #1f2128;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffce22;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.doneButton:hover {
+  background-color: #ffd84d;
+}
+
+.doneButton:active {
+  background-color: #ffce22;
+}
